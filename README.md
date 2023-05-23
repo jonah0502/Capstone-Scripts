@@ -1,3 +1,7 @@
+#   Capstone Scripts
+
+This repository contains various useful scripts used in our capstone script that enabled us to build an anomaly detection app driven by two yolov5s models.
+
 ##  bb_crop.py
 
 This script crops an image based on an input YOLOv5 style label. This was used for the purpose of cropping the weld section of an image so it could be relabeled for anomalies.
