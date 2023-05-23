@@ -1,5 +1,3 @@
-Author: Jonah Biedermann and Stuart Allen
+This directory contains the scripts canny.py, sobel.py, and sobel_v2.py. All of these scripts apply an edge filter to an image and store the result in a respective folder.
 
-1. Make sure to install all requirements such as openCV,  numpy, and os. 
-2. make sure you are using python3 and run ```python3 BB_crop.py```
-3. Then just follow the instructions given by the program
+dependencies: cv2, numpy, and pytorch
