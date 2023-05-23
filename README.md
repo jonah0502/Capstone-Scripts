@@ -33,7 +33,7 @@ There are several global control variables to help control the program.
 
 
 
-GAN_Welds.ipynb
+GAN_augmentations.ipynb
 
 This program is an implementation of a Generative Adversarial Network (GAN), a data augmentation machine learning program to create new images from reference images. The model works by training two neural networks, one with the goal of creating images from reference images that cannot be differentiated from real images (called the generator), and one that learns to differentiate real images from those created by a network (called the discriminator). These two networks are trained simultaneously, to create images indistinguishable from real images.
 
