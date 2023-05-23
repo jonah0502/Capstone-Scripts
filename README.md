@@ -1,12 +1,12 @@
-Author: Jonah Biedermann, Stuart Allen, and John Kaufman
+##  bb_crop.py
+
+This script crops an image based on an input YOLOv5 style label. This was used for the purpose of cropping the weld section of an image so it could be relabeled for anomalies.
 
 1. Make sure to install all requirements such as openCV,  numpy, and os. 
 2. make sure you are using python3 and run ```python3 BB_crop.py```
 3. Then just follow the instructions given by the program. Assume all paths specified are in the same directory.
 
-
-
-augmentation.py:
+## augmentation.py:
 
 A data augmentation program, used to create copies of images from real images for the purpose of expanding the training and validation datasets. R. In the case of the weld image dataset, the augmentation process consists of making a copy of a pre-existing image, and putting it through a series of transformations to create a new image.
 
@@ -33,7 +33,7 @@ There are several global control variables to help control the program.
 
 
 
-GAN_augmentations.ipynb
+## GAN_augmentations.ipynb
 
 This program is an implementation of a Generative Adversarial Network (GAN), a data augmentation machine learning program to create new images from reference images. The model works by training two neural networks, one with the goal of creating images from reference images that cannot be differentiated from real images (called the generator), and one that learns to differentiate real images from those created by a network (called the discriminator). These two networks are trained simultaneously, to create images indistinguishable from real images.
 
@@ -41,3 +41,8 @@ This code is adapted from the guide at this address, which gives a more in-depth
 
 To run this code, download the ipynb file, and upload it to google colab, which will have all of the required dependencies pre-installed. When using google colab, ensure it is running the code on the device GPU, to help quicken the training process. The only other requirement is that the images need to be a 28x28 pixel resolution.
 
+## sobel_canny
+
+This directory contains the scripts canny.py, sobel.py, and sobel_v2.py. All of these scripts apply an edge filter to an image and store the result in a respective folder.
+
+dependencies: cv2, numpy, and pytorch
